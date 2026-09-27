@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Peanut Butter Jelly Time!",
+	"description": "It's Peanut Butter Jelly Time!",
+
+	"node":
+	{
+		"parent": "beerfriend",
+		"direction": "west"
+	}
+}
