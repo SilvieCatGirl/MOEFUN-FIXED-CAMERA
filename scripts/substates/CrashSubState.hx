@@ -1,5 +1,7 @@
 var damn_it;
 
+public var phase2;
+
 function onLoad()
 {
 	damn_it = new FlxSprite(0, 0).makeGraphic(3000, 2000, 0xffffffff);
@@ -20,8 +22,27 @@ function crash()
 			game.audio?.resume();
 
 			FlxG.signals.postUpdate.addOnce(function() {
-				FlxG.stage.window.close();
+				if (phase2 == null)
+				{
+					FlxG.stage.window.close();
+				}
+				else
+				{
+					noCrash();
+				}
 			});
 		});
 	});
+}
+
+function noCrash()
+{
+	FlxG.camera.followLerp = camLerp;
+	game.persistentUpdate = true;
+	game.persistentDraw = false;
+	changeCharacter(phase2, 0);
+	game.paused = false;
+	crashing = false;
+	canPause = true;
+	close();
 }
