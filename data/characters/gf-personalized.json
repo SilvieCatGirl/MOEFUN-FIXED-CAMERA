@@ -150,7 +150,7 @@
 		-250,
 		-250
 	],
-	"dance_every": 2,
+	"dance_every": 1,
 	"gameover_intial_sound": null,
 	"flags": null,
 	"scalableOffsets": true,

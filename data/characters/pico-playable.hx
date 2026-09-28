@@ -109,7 +109,7 @@ function onBeatHit()
 
 		case 46:
 			if (!killedPlay) changeCharacter('pico-playable', 0);
-			if (!killedOpp) changeCharacter('pico', 1);
+			if (!killedOpp) changeCharacter('pico-monoitone', 1);
 
 			dad.vSliceSustains = false;
 	}
