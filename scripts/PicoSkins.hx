@@ -2,8 +2,6 @@ public var _hell_yeah_picos = ['17bucks-pico', 'evil-impostor-pico', 'pick', 'pi
 
 public var _array_picos = ['suspect', 'roomcode'];
 
-var baseChar = 'pico';
-
 var leShitFuckAss;
 var leShitFuckAss2;
 
