@@ -12,14 +12,16 @@ var leShitFuckAss2;
 
 function onLoad()
 {
-	songName = Paths.sanitize(PlayState.SONG.song);
+	leName = Paths.sanitize(PlayState.SONG.song);
+
+	if (!hasBfSkin) return;
 
 	for (i in 0..._array_picos.length)
 	{
 		leShitFuckAss = _array_picos[i][0];
 		leShitFuckAss2 = _array_picos[i][1];
 
-		switch (songName)
+		switch (leName)
 		{
 			case leShitFuckAss:
 				baseChar = leShitFuckAss2;

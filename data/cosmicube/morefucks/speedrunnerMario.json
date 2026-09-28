@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Speedrunner Mario",
+	"description": "wahoo",
+
+	"node":
+	{
+		"parent": "pbjt",
+		"direction": "north"
+	}
+}

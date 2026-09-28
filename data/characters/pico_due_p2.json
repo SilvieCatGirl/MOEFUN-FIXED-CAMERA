@@ -141,8 +141,8 @@
 	"dance_every": 2,
 	"gameover_intial_sound": null,
 	"flags": {
+		"customMonotone": "pico-monoitono",
 		"botplayNoteSkin": "madness-bot",
-		"customMonotone": "pico",
 		"noteSkin": "madness",
 		"runner": true
 	},

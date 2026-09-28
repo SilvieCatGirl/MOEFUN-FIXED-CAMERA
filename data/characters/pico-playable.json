@@ -156,7 +156,7 @@
 	"flags": {
 		"variants": {
 			"cold": "pico-playable-christmas",
-			"monotone": "pico",
+			"monotone": "pico-monoitono",
 			"weird": "picoweird"
 		}
 	},
