@@ -1,0 +1,160 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Idle"
+		},
+		{
+			"offsets": [
+				59,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Left"
+		},
+		{
+			"offsets": [
+				-11,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Right"
+		},
+		{
+			"offsets": [
+				5,
+				55
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake UP"
+		},
+		{
+			"offsets": [
+				-6,
+				-38
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle-alt",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Idle ALT"
+		},
+		{
+			"offsets": [
+				-6,
+				-38
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Down ALT"
+		},
+		{
+			"offsets": [
+				67,
+				15
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Left ALT"
+		},
+		{
+			"offsets": [
+				-10,
+				22
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Right ALT"
+		},
+		{
+			"offsets": [
+				12,
+				72
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "FunkinHX Animations/FunkinHX Fake Up ALT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/pp/FunkinHX",
+	"position": [
+		0,
+		340
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf-pp",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.875,
+	"_editor_isPlayer": false
+}
