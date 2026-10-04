@@ -1,16 +1,16 @@
 {
 	"animations": [
 		{
-			"fps": 7,
+			"fps": 3,
 			"loop": true,
 			"anim": "idle",
 			"name": "idle"
 		}
 	],
 
-	"scale": 0.6,
+	"scale": 2,
 	"position": [
 		0,
-		70
+		-50
 	]
 }
