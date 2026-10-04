@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="he is blue for an amazing reason.png">
+<SubTexture name="idle0000" x="0" y="0" width="1074" height="891" frameX="0" frameY="0" frameWidth="1074" frameHeight="891" />
+</TextureAtlas>

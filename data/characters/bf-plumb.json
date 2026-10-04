@@ -1,0 +1,194 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Idle Dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				58,
+				8
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-32,
+				55
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				3
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Hey",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-26,
+				-64
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pre-attack",
+			"indices": [],
+			"name": "Boyfriend Animations/BF Pre Attack"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				46
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Left MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-24,
+				6
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Down MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-42,
+				43
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Right MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-35
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-31,
+				63
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "Boyfriend Animations/BF Up MISS",
+			"indices": []
+		},
+		{
+			"offsets": [
+				1528,
+				257
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "micthrow",
+			"flipX": false,
+			"indices": [],
+			"name": "Boyfriend Animations/BF Attack"
+		},
+		{
+			"offsets": [
+				1259,
+				190
+			],
+			"flipY": false,
+			"loop": false,
+			"fps": 24,
+			"anim": "micthrow-alt",
+			"flipX": false,
+			"indices": [],
+			"name": "Boyfriend Animations/BF Attack ALT"
+		},
+		{
+			"offsets": [
+				-17,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "scared",
+			"loop": true,
+			"name": "Boyfriend Animations/BF Fear"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/pp/ppbf",
+	"position": [
+		0,
+		320
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {
+		"variants": {
+			"monotone": "bf-plumb-real"
+		}
+	},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf-pp",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		826,
+		-104
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.95,
+	"_editor_isPlayer": true
+}

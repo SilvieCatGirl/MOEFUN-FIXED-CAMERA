@@ -29,7 +29,3 @@ function onUpdate()
 		}
 	}
 }
-
-// plugin scirpts dont have onUpdate rn so  this will do i guess??
-function onLoad() FlxG.signals.preUpdate.add(onUpdate);
-function onDestroy() FlxG.signals.preUpdate.remove(onUpdate);

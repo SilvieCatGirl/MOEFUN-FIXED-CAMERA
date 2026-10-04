@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Wawa Cat",
+	"description": "look at it go",
+
+	"node": {
+		"parent": "bf-plumb",
+		"direction": "south"
+	},
+	
+	"color": [
+		218,
+		149,
+		92
+	]
+}

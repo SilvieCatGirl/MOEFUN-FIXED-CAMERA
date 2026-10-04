@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Birthday Kludge",
+	"description": "he is blue for an amazing reason",
+
+	"node": {
+		"parent": "Rush134Body",
+		"direction": "south"
+	},
+	
+	"color": [
+		75,
+		188,
+		217
+	]
+}

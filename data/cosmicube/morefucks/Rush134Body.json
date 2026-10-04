@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Smol Kludge",
+	"description": "he's so babeh\n\nRequested by kludge54n5",
+
+	"node": {
+		"parent": "bf-plumb",
+		"direction": "west"
+	},
+	
+	"color": [
+		75,
+		188,
+		217
+	]
+}

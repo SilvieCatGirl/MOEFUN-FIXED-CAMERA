@@ -135,8 +135,8 @@
 	"no_antialiasing": false,
 	"image": "characters/pp/FunkinHX",
 	"position": [
-		0,
-		340
+		80,
+		320
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
@@ -155,6 +155,6 @@
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 8,
-	"scale": 0.875,
+	"scale": 0.95,
 	"_editor_isPlayer": false
 }

@@ -1,13 +1,12 @@
 {
 	"animations": [
 		{
-			"fps": 24,
+			"fps": 48,
 			"loop": true,
 			"anim": "idle",
-			"name": "ted"
+			"name": "idle"
 		}
 	],
 
-	"dance_every": 1,
-	"scale": 1
+	"scale": 0.6
 }

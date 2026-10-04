@@ -4,10 +4,9 @@
 			"fps": 24,
 			"loop": true,
 			"anim": "idle",
-			"name": "ted"
+			"name": "idle"
 		}
 	],
 
-	"dance_every": 1,
-	"scale": 1
+	"scale": 0.25
 }
