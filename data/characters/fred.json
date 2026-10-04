@@ -1,0 +1,95 @@
+{
+	"pausePortrait": null,
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idle",
+			"loop": false,
+			"name": "fred idle"
+		},
+		{
+			"offsets": [
+				0,
+				-60
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "fred down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "fred right"
+		},
+		{
+			"offsets": [
+				-50,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "fred left"
+		},
+		{
+			"offsets": [
+				10,
+				-47
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "fred up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/fred",
+	"position": [
+		-350,
+		0
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "fred",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -15724784,
+	"camera_position": [
+		0,
+		0
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 1.75,
+	"_editor_isPlayer": true
+}

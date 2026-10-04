@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="fred.png">
+<SubTexture name="fred idle0000" x="387" y="0" width="157" height="386" frameX="-551" frameY="-196" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred left0000" x="1066" y="0" width="360" height="296" frameX="-401" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred left0001" x="1066" y="0" width="360" height="296" frameX="-401" frameY="-191" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred left0002" x="544" y="0" width="245" height="349" frameX="-519" frameY="-194" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred up0000" x="0" y="0" width="207" height="443" frameX="-506" frameY="-94" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred up0001" x="0" y="0" width="207" height="443" frameX="-506" frameY="-94" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred up0002" x="207" y="0" width="180" height="421" frameX="-531" frameY="-114" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred right0000" x="0" y="443" width="316" height="343" frameX="-620" frameY="-243" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred right0001" x="0" y="443" width="316" height="343" frameX="-620" frameY="-243" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred right0002" x="789" y="0" width="277" height="303" frameX="-620" frameY="-283" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred down0000" x="316" y="443" width="211" height="343" frameX="-523" frameY="-376" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred down0001" x="316" y="443" width="211" height="343" frameX="-523" frameY="-376" frameWidth="1280" frameHeight="720" />
+<SubTexture name="fred down0002" x="527" y="443" width="258" height="333" frameX="-501" frameY="-354" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

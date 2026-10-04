@@ -102,18 +102,14 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/beb/beb_bf",
+	"image": "characters/beb/beb_bfWEIRD",
 	"position": [
 		-50,
 		200
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": {
-		"variants": {
-			"weird": "beb_bf_weird"
-		}
-	},
+	"flags": null,
 	"scalableOffsets": false,
 	"gameover_confirm_sound": null,
 	"healthicon": "beb_bf",
