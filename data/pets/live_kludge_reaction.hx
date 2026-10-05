@@ -5,3 +5,21 @@ function onLoad()
 	parent.x += 456;
 	parent.y -= 222;
 }
+
+function onUpdatePost(elapsed:Float):Void
+{
+	if (parent.shader != null)
+	{
+		parent.shader = null;
+	}
+
+	if (parent.alpha != 1)
+	{
+		parent.alpha = 1;
+	}
+
+	if (parent.visible != true)
+	{
+		parent.visible = true;
+	}
+}
