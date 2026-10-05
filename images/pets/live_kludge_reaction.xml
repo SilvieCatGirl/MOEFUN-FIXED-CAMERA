@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="live_kludge_reaction.png">
+<SubTexture name="idle0000" x="0" y="0" width="735" height="551" frameX="0" frameY="0" frameWidth="735" frameHeight="551" />
+</TextureAtlas>
