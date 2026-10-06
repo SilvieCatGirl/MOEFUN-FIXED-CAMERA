@@ -10,6 +10,8 @@ function onLoad()
 	damn_it.alpha = 0.0001;
 	add(damn_it);
 
+	// phase2 = PlayState.instance.boyfriend.getFlag('crashGuy');
+
 	FlxG.signals.postUpdate.addOnce(crash);
 }
 
@@ -40,9 +42,7 @@ function noCrash()
 	FlxG.camera.followLerp = camLerp;
 	game.persistentUpdate = true;
 	game.persistentDraw = false;
-	changeCharacter(phase2, 0);
+	game.canPause = true;
 	game.paused = false;
-	crashing = false;
-	canPause = true;
 	close();
 }

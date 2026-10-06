@@ -8,5 +8,6 @@
 		}
 	],
 
-	"scale": 2
+	"scale": 2,
+	"no_antialiasing": true
 }
