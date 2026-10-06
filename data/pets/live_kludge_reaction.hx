@@ -6,7 +6,7 @@ var fuckassFire;
 
 function onLoad()
 {
-	if (FlxG.random.bool(100))
+	if (FlxG.random.bool(10))
 	{
 		parent.loadPet('evil_kludge_reaction');
 
