@@ -4,6 +4,10 @@ var evilShader;
 var evilShader2;
 var fuckassFire;
 
+var bfRim:ExtraDropShadowShader = new ExtraDropShadowShader();
+var gfRim:ExtraDropShadowShader = new ExtraDropShadowShader();
+var dadRim:ExtraDropShadowShader = new ExtraDropShadowShader();
+
 function onLoad()
 {
 	if (FlxG.random.bool(10))
@@ -29,8 +33,7 @@ function onLoad()
 		fuckassFire.animation.addByPrefix('idle', 'idle', 18, true);
 		fuckassFire.animation.play('idle');
 		fuckassFire.camera = PlayState.instance.camOther;
-		fuckassFire.scale.x = 3;
-		fuckassFire.scale.y = 5;
+		fuckassFire.scale.set(3, 5);
 		fuckassFire.screenCenter();
 		fuckassFire.y = (FlxG.height - fuckassFire.height) + 630;
 		insert(2, fuckassFire);
@@ -71,14 +74,23 @@ function onUpdatePost(elapsed:Float):Void
 
 		if (fuckassFire.y > ((FlxG.height - fuckassFire.height) - 370))
 		{
-			fuckassFire.y -= 0.1 * (songMisses + 1);
+			fuckassFire.y -= (0.1 * (songMisses + 1)) * playbackRate;
 		}
-	}
 
-	if (FlxG.keys.justPressed.ALT)
-	{
-		FlxTween.cancelTweensOf(fuckassFire);
-		FlxTween.tween(fuckassFire, {y: fuckassFire.y + 20}, 0.3, {ease: FlxEase.quartOut});
+		if (FlxG.keys.justPressed.ALT)
+		{
+			FlxTween.cancelTweensOf(fuckassFire);
+			FlxTween.tween(fuckassFire, {y: fuckassFire.y + 20}, 0.3, {ease: FlxEase.quartOut});
+		}
+
+		if (ClientPrefs.shaders)
+		{
+			dist = ((((FlxG.height - fuckassFire.height) + 630) - fuckassFire.y) / 5);
+
+			distRecalc = (dist > 0 ? dist : 0);
+
+			bfRim.layers[0].distance = gfRim.layers[0].distance = dadRim.layers[0].distance = distRecalc;
+		}
 	}
 }
 
@@ -88,27 +100,17 @@ function fire_shaders()
 
 	var evilFuckedUpNess:ExtraDropShadowShader = new ExtraDropShadowShader();
 
-	evilFuckedUpNess.setColorMatrix([
-		0.8,   0, 0.4, 0, 16,
-		-.1, 0.6, -.1, 0,  0,
-		0.2,   0, 0.6, 0, 24,
-		  0,   0,   0, 1,  0
-	]);
 	evilFuckedUpNess.addLayer([
-		5, -.1, .2, 0, 64,
-		-.3, 1.6,  0, 0, 32,
-		  0,   0,  1, 0,  0,
-		  0,   0,  0, 1,  0
+		  5, -.1, 20,   0,  64,
+		-.3, 1.6, .1,   0,  -8,
+		  0,   0,  1, -.3, -16,
+		  0,   0,  0,   1,   0
 	], 330, 25, .01);
 
-	var bfRim = evilFuckedUpNess;
+	bfRim = evilFuckedUpNess;
 	bfRim.layers[0].angle = 270;
-	bfRim.layers[1].angle = 270;
 	bfRim.attachedSprite = boyfriend;
 	boyfriend.useRenderTexture = true;
-
-	var gfRim:ExtraDropShadowShader = new ExtraDropShadowShader();
-	var dadRim:ExtraDropShadowShader = new ExtraDropShadowShader();
 
 	gfRim.copyFrom(dadRim.copyFrom(bfRim));
 
