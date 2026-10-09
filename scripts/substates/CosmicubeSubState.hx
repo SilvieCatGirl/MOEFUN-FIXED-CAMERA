@@ -40,6 +40,8 @@ function handleNode(node)
 	{
 		var charInfo = CharacterParser.fetchInfo(node.meta.fileName); // get char info
 
+		trace('Character: ' + node.meta.fileName + ' | Parent: ' + node.meta.node.parent + ' | Direction: ' + node.meta.node.direction + ' | Unlocked: ' + node.unlocked);
+
 		if (node.unlocked) // if its unlocked we add its icon
 		{
 			var icon = new FlxSprite().loadGraphic(Paths.image('icons/icon-' + charInfo.healthicon));
