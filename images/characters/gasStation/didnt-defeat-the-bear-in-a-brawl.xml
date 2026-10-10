@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="didnt-defeat-the-bear-in-a-brawl.png">
+<SubTexture name="meth kicked in0000" x="1081" y="864" width="382" height="339" frameX="-365" frameY="-442" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="meth kicked in0001" x="678" y="864" width="403" height="351" frameX="-359" frameY="-430" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="meth kicked in0002" x="0" y="864" width="678" height="396" frameX="-193" frameY="-382" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="meth kicked in0003" x="742" y="441" width="755" height="421" frameX="-157" frameY="-357" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="meth kicked in0004" x="0" y="441" width="742" height="423" frameX="-163" frameY="-357" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="meth kicked in0005" x="760" y="0" width="753" height="433" frameX="-158" frameY="-351" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="meth kicked in0006" x="0" y="0" width="760" height="441" frameX="-154" frameY="-347" frameWidth="1080" frameHeight="1080" />
+</TextureAtlas>
