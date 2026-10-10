@@ -13,7 +13,7 @@ function onStepHit()
 	if (customTimer < stepsToEnd) customTimer++;
 	else if (!parent.canDance)
 	{
-		parent.dance(false);
 		parent.canDance = true;
+		parent.dance(true);
 	}
 }
