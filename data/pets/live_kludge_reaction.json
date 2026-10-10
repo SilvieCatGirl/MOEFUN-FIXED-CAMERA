@@ -8,5 +8,9 @@
 		}
 	],
 
+	"flags": {
+		"spin": false
+	},
+
 	"scale": 0.5
 }
