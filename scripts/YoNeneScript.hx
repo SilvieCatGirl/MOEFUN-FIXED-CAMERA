@@ -10,8 +10,6 @@ var raise_her_knife = false;
 
 var blinkCountdown = 3;
 
-var playedAnim = false;
-
 function onCreatePost()
 {
 	if (gf == null)
@@ -89,11 +87,10 @@ function goodNoteHit(note)
 	FlxG.signals.postUpdate.addOnce(function() {
 		comboAnim = 'combo' + game.combo;
 
-		if (gf.hasAnim(comboAnim) && !playedAnim)
+		if (gf.hasAnim(comboAnim))
 		{
 			gf.playAnim(comboAnim, true);
 			gf.specialAnim = true;
-			playedAnim = true;
 		}
 	});
 }

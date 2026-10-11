@@ -1,5 +1,5 @@
 {
-	"pausePortrait": null,
+	"pausePortrait": "",
 	"animations": [
 		{
 			"offsets": [
@@ -12,77 +12,12 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "Idle instance 1"
+			"name": "Bf/Idle"
 		},
 		{
 			"offsets": [
-				20,
-				-60
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singDOWN",
-			"loop": false,
-			"name": "Down instance 1"
-		},
-		{
-			"offsets": [
-				47,
-				5
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "Left instance 1"
-		},
-		{
-			"offsets": [
-				-23,
-				-19
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Right instance 1"
-		},
-		{
-			"offsets": [
-				0,
-				4
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "singUP",
-			"loop": false,
-			"name": "Up instance 1"
-		},
-		{
-			"offsets": [
-				-11,
-				-234
-			],
-			"indices": [],
-			"fps": 24,
-			"flipX": false,
-			"flipY": false,
-			"anim": "miss",
-			"loop": false,
-			"name": "miss instance 1"
-		},
-		{
-			"offsets": [
-				-9,
-				-6
+				-8,
+				-1
 			],
 			"indices": [],
 			"fps": 24,
@@ -90,18 +25,83 @@
 			"flipY": false,
 			"anim": "hey",
 			"loop": false,
-			"name": "Hey instance 1"
+			"name": "Bf/Hey"
+		},
+		{
+			"offsets": [
+				-11,
+				-124
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "miss",
+			"loop": false,
+			"name": "Bf/miss"
+		},
+		{
+			"offsets": [
+				36,
+				-14
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Bf/Down"
+		},
+		{
+			"offsets": [
+				47,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Bf/Left"
+		},
+		{
+			"offsets": [
+				-23,
+				-5
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Bf/Right"
+		},
+		{
+			"offsets": [
+				12,
+				16
+			],
+			"indices": [],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Bf/Up"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/wafer/wbf",
+	"image": "characters/wafer/jobby",
 	"position": [
 		55,
 		375
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"flags": null,
+	"flags": {},
 	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "wbf",

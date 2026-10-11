@@ -32,14 +32,15 @@ function onCountdownTick(tick)
 
 function onUpdatePost()
 {
-	if (noSpeakerStages.contains(PlayState.SONG.stage))
-		return FlxTween.cancelTweensOf(gf);
+	if (noSpeakerStages.contains(PlayState.SONG.stage)) return FlxTween.cancelTweensOf(gf);
 	
 	speaker.shader = gf.shader;
 	speaker.color = gf.color;
 	speaker.alpha = gf.alpha;
 	speaker.visible = gf.visible;
 	speaker.angle = gf.angle;
+	speaker.x = gf.x;
+	speaker.y = gf.y + 475;
 }
 
 function platformFloat()

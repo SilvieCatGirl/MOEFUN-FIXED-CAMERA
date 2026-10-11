@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Live Reaction",
+	"description": "live Rush134Body reaction",
+
+	"node": {
+		"parent": "green-mix-playable",
+		"direction": "south"
+	},
+	
+	"color": [
+		75,
+		188,
+		217
+	]
+}

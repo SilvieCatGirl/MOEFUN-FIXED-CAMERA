@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "Sonic.EXE",
+	"description": "a",
+
+	"node": {
+		"parent": "fred",
+		"direction": "east"
+	},
+	
+	"color": [
+		0,
+		0,
+		255
+	]
+}

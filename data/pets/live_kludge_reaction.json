@@ -1,0 +1,16 @@
+{
+	"animations": [
+		{
+			"fps": 24,
+			"loop": true,
+			"anim": "idle",
+			"name": "idle"
+		}
+	],
+
+	"flags": {
+		"spin": false
+	},
+
+	"scale": 0.5
+}
