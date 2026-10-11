@@ -1,0 +1,18 @@
+{
+	"type": "pet",
+	"price": 300,
+	
+	"title": "The Roaring Knight",
+	"description": "SWOON",
+
+	"node": {
+		"parent": "he is blue for an amazing reason",
+		"direction": "west"
+	},
+	
+	"color": [
+		0,
+		0,
+		0
+	]
+}

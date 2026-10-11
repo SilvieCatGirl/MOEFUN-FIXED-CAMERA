@@ -1,0 +1,44 @@
+{
+	"animations": [
+		{
+			"fps": 24,
+			"loop": false,
+			"anim": "idle",
+			"name": "idle",
+			"offsets": [0, 0]
+		},
+		{
+			"fps": 24,
+			"loop": false,
+			"anim": "singLEFT",
+			"name": "right",
+			"offsets": [171, 2]
+		},
+		{
+			"fps": 24,
+			"loop": false,
+			"anim": "singDOWN",
+			"name": "down",
+			"offsets": [139, -118]
+		},
+		{
+			"fps": 24,
+			"loop": false,
+			"anim": "singUP",
+			"name": "up",
+			"offsets": [116, 259]
+		},
+		{
+			"fps": 24,
+			"loop": false,
+			"anim": "singRIGHT",
+			"name": "left",
+			"offsets": [-47, 3]
+		}
+	],
+
+	"scale": 0.3,
+	"flip_x": true,
+	"scalableOffsets": true,
+	"danceEveryNumBeats": 2
+}

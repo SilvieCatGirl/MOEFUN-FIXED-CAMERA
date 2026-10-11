@@ -1,0 +1,17 @@
+{
+	"animations": [
+		{
+			"fps": 3,
+			"loop": true,
+			"anim": "idle",
+			"name": "idle"
+		}
+	],
+
+	"scale": 2,
+	"no_antialiasing": true,
+	"position": [
+		0,
+		-50
+	]
+}

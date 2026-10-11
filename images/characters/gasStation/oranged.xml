@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="oranged.png">
+<SubTexture name="fucking dead0000" x="0" y="0" width="466" height="274" frameX="-337" frameY="-506" frameWidth="1080" frameHeight="1080" />
+</TextureAtlas>

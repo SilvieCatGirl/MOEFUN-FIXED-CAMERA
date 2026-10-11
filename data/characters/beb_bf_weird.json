@@ -1,0 +1,129 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bf idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				28,
+				-3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "bf left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-3,
+				-15
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bf down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-24,
+				15
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "bf up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				32,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "bf miss left"
+		},
+		{
+			"offsets": [
+				3,
+				-15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "bf miss down"
+		},
+		{
+			"offsets": [
+				-24,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "bf miss up"
+		},
+		{
+			"offsets": [
+				-37,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "bf miss right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "bf right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/beb/beb_bfWEIRD",
+	"position": [
+		-50,
+		200
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "beb_bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		50,
+		100
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 0.8,
+	"_editor_isPlayer": true
+}

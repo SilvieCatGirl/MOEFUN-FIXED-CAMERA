@@ -12,14 +12,14 @@
 			"flipY": false,
 			"anim": "idle",
 			"loop": false,
-			"name": "gf instance 1"
+			"name": "gf"
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/wafer/wgf",
+	"image": "characters/wafer/fifi",
 	"position": [
-		0,
-		300
+		255,
+		310
 	],
 	"dance_every": 1,
 	"gameover_intial_sound": null,
