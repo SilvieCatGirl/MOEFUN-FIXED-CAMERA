@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ThomasGBC_Assets.png">
+<SubTexture name="ThomasGBC_Assets idle0000" x="0" y="0" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets right0000" x="42" y="0" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets right0001" x="84" y="0" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets left0000" x="0" y="48" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets left0001" x="42" y="48" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets up0000" x="84" y="48" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets up0001" x="126" y="0" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets down0000" x="126" y="48" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets down0001" x="0" y="96" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets fakeout0000" x="42" y="96" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+<SubTexture name="ThomasGBC_Assets gameover0000" x="84" y="96" width="42" height="48" frameX="-3" frameY="0" frameWidth="48" frameHeight="48" />
+</TextureAtlas>
