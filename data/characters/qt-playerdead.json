@@ -63,7 +63,7 @@
 		259
 	],
 	"gameover_loop_sound": "gameOver-qt",
-	"sing_duration": 6.1,
+	"sing_duration": 8,
 	"scale": 1,
 	"_editor_isPlayer": true
 }

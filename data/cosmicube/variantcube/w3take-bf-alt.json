@@ -1,0 +1,13 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend (Week 3 Retake) (Alt)",
+	"description": "lank 2",
+
+	"node":
+	{
+		"parent": "beb_bf_weird",
+		"direction": "east"
+	}
+}

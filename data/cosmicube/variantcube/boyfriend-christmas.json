@@ -1,0 +1,14 @@
+{
+	"type": "playerSkin",
+	"price": 250,
+
+	"title": "Boyfriend.XML (Christmas)",
+	"description": "jolliness",
+	"hint": "jolly moron",
+
+	"node":
+	{
+		"parent": "w3take-bf-alt",
+		"direction": "east"
+	}
+}

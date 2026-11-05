@@ -86,7 +86,7 @@
 				0,
 				0
 			],
-			"anim": "singLEFT-miss",
+			"anim": "singLEFTmiss",
 			"fps": 24,
 			"name": "Left Miss",
 			"indices": [],
@@ -99,7 +99,7 @@
 				0,
 				0
 			],
-			"anim": "singDOWN-miss",
+			"anim": "singDOWNmiss",
 			"fps": 24,
 			"name": "Down Miss",
 			"indices": [],
@@ -112,7 +112,7 @@
 				0,
 				0
 			],
-			"anim": "singUP-miss",
+			"anim": "singUPmiss",
 			"fps": 24,
 			"name": "Up Miss",
 			"indices": [],
@@ -125,7 +125,7 @@
 				0,
 				0
 			],
-			"anim": "singRIGHT-miss",
+			"anim": "singRIGHTmiss",
 			"fps": 24,
 			"name": "Right Miss",
 			"indices": [],
@@ -133,7 +133,7 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/qt-playable,characters/qt-playable/death",
+	"image": "characters/qt-playable",
 	"position": [
 		-125,
 		240
@@ -154,7 +154,7 @@
 		0
 	],
 	"gameover_loop_sound": "gameOver-qt",
-	"sing_duration": 6.1,
+	"sing_duration": 8,
 	"scale": 1,
 	"_editor_isPlayer": true
 }

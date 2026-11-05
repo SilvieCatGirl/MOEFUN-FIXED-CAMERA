@@ -62,7 +62,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singLEFT-miss",
+			"anim": "singLEFTmiss",
 			"loop": false,
 			"name": "Left Miss"
 		},
@@ -75,7 +75,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singDOWN-miss",
+			"anim": "singDOWNmiss",
 			"loop": false,
 			"name": "Down Miss"
 		},
@@ -88,7 +88,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singUP-miss",
+			"anim": "singUPmiss",
 			"loop": false,
 			"name": "Up Miss"
 		},
@@ -101,7 +101,7 @@
 			"fps": 24,
 			"flipX": false,
 			"flipY": false,
-			"anim": "singRIGHT-miss",
+			"anim": "singRIGHTmiss",
 			"loop": false,
 			"name": "Right Miss"
 		},
@@ -141,7 +141,7 @@
 		12
 	],
 	"gameover_loop_sound": "gameOver-qt",
-	"sing_duration": 6.1,
+	"sing_duration": 8,
 	"scale": 1,
 	"_editor_isPlayer": true
 }
