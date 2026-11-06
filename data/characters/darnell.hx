@@ -120,3 +120,41 @@ function onBeatHit()
 		explodeYellow.animation.play('boom');
 	}
 }
+
+function onEvent(name, v1, v2)
+{
+	if (boyfriend.curCharacter == 'darnell' && PlayState.SONG.song == "Tomongus Tuesday")
+	// LOL
+	switch (v1)
+	{
+		case 'p1':
+			triggerEventNote("Camera Follow Pos", "1000", "650");
+
+		case 'p2':
+			triggerEventNote("HUD Fade", "0", "1");
+
+		case 'p3':
+			triggerEventNote("tuesdayblast", "", "");
+			boyfriend.playAnim('can-prep');
+			boyfriend.specialAnim = true;
+
+		case 'p5':
+			triggerEventNote("Play Animation", "prep", "Dad");
+
+		case 'p6':
+			triggerEventNote("Play Animation", "punt-can", "BF");
+
+			canKick.alpha = 1;
+			canKick.animation.play('to', true);
+
+			new FlxTimer().start(0.15, function(_) {
+				triggerEventNote("Play Animation", "shot", "Dad");
+
+				explodeYellow.alpha = 1;
+				explodeYellow.animation.play('boom');
+			});
+
+		case 'p7':
+			triggerEventNote("Alt Idle Animation", "Dad", "-alt");
+	}
+}

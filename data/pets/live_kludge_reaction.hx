@@ -1,4 +1,5 @@
 import funkin.game.shaders.ExtraDropShadowShader;
+import funkin.objects.Pet;
 
 var evilShader;
 var evilShader2;
@@ -8,11 +9,17 @@ var bfRim:ExtraDropShadowShader = new ExtraDropShadowShader();
 var gfRim:ExtraDropShadowShader = new ExtraDropShadowShader();
 var dadRim:ExtraDropShadowShader = new ExtraDropShadowShader();
 
+var kludge_custom:Pet;
+
 function onLoad()
 {
+	kludge_custom = new Pet(0, 0);
+	kludge_custom.loadPet(pet.curPet);
+	add(kludge_custom);
+
 	if (FlxG.random.bool(10))
 	{
-		parent.loadPet('evil_kludge_reaction');
+		kludge_custom.loadPet('evil_kludge_reaction');
 
 		evilShader = new FunkinSprite(0, 0).makeGraphic(FlxG.width + 10, FlxG.height + 10, 0xFFFF0000);
 		evilShader.camera = PlayState.instance.camOther;
@@ -42,30 +49,48 @@ function onLoad()
 			fire_shaders();
 		});
 	}
+
+	parent.visible = false;
+	parent.active = false;
 }
 
 function onCreatePost()
 {
-	parent.camera = PlayState.instance.camOther; // Billy told me to put it above the notes
-	parent.x = FlxG.width - parent.width;
-	parent.y = 0;
+	kludge_custom.camera = PlayState.instance.camOther; // Billy told me to put it above the notes
+	kludge_custom.x = FlxG.width - kludge_custom.width;
+	kludge_custom.y = 0;
+
+	if (curSong == 'Identity Crisis')
+	{
+		copyPet.camera = PlayState.instance.camOther;
+		copyPet.zIndex = 10;
+		copyPet.x = 0;
+		copyPet.y = 0;
+	}
+}
+
+function onGameOverPost()
+{
+	kludge_custom.camera = GameOverSubstate.instance.camCTRL;
+	kludge_custom.loadPet(pet.curPet);
+	GameOverSubstate.instance.add(kludge_custom);
 }
 
 function onUpdatePost(elapsed:Float):Void
 {
-	if (parent.shader != null)
+	if (kludge_custom.shader != null)
 	{
-		parent.shader = null;
+		kludge_custom.shader = null;
 	}
 
-	if (parent.alpha != 1)
+	if (kludge_custom.alpha != 1)
 	{
-		parent.alpha = 1;
+		kludge_custom.alpha = 1;
 	}
 
-	if (parent.visible != true)
+	if (kludge_custom.visible != true)
 	{
-		parent.visible = true;
+		kludge_custom.visible = true;
 	}
 
 	if (evilShader != null)

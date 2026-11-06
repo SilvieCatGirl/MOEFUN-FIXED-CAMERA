@@ -3,7 +3,7 @@ import flixel.graphics.frames.FlxTileFrames;
 
 var checked:Bool = false;
 
-var moesCubes = ['morefucks', 'extraplayer', 'extraextraplayer'];
+var moesCubes = ['abigcube', 'extraplayerone', 'extraplayertwo'];
 
 function onUpdate()
 {
