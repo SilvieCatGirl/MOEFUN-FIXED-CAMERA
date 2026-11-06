@@ -1,5 +1,6 @@
 import funkin.states.StoryMenuState;
 import funkin.states.FreeplayState;
+import funkin.utils.WindowUtil;
 
 var racism:FlxSprite;
 var deadfriend:FlxSprite;
@@ -15,12 +16,20 @@ var restarting:Bool = false;
 
 var restartSoundCustom;
 
+var savedThing:Float = 0;
+
 function onLoad()
 {
 	game.persistentUpdate = false;
 	game.persistentDraw = true;
 	game.audio?.pause();
 	game.paused = true;
+
+	savedThing = FlxG.stage.window.width;
+
+	FlxG.stage.window.width = 822;
+
+	FlxG.stage.window.x = Std.int((WindowUtil.monitorResolutionWidth) / 4);
 
 	racism = new FlxSprite(0, 0).makeScaledGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
 	racism.camera = PlayState.instance.camOther;
@@ -61,8 +70,8 @@ function onLoad()
 function fuckingWork()
 {
 	new FlxTimer().start(2.3, () -> {
-		FlxTween.tween(go2, {y: go2.y - 1200}, 1, {ease: FlxEase.cubeOut});
-		FlxTween.tween(go1, {y: go1.y - 1200}, 1.075, {ease: FlxEase.cubeOut});
+		FlxTween.tween(go2, {y: go2.y - 1200}, 1.075, {ease: FlxEase.cubeOut});
+		FlxTween.tween(go1, {y: go1.y - 1200}, 1, {ease: FlxEase.cubeOut});
 	});
 
 	FlxTween.shake(deadfriend, 0.1, 2, FlxAxes.X);
@@ -121,4 +130,11 @@ function restart()
 	theTime.start(2.5, () -> {
 		FlxG.resetState();
 	});
+}
+
+function onDestroy()
+{
+	FlxG.stage.window.width = savedThing;
+
+	FlxG.stage.window.x = Std.int((WindowUtil.monitorResolutionWidth) / 4);
 }

@@ -1,5 +1,3 @@
-import flixel.FlxObject;
-
 using StringTools;
 
 var doWeLegs:Bool = false;
@@ -7,10 +5,11 @@ public var bfOldLegs:Character;
 var bfAnchorPoint:Array<Float> = [0, 0];
 var legPosY = [13, 7, -3, -1, -1, 2, 7, 9, 7, 2, 0, 0, 3, 1, 3, 7, 13];
 
-var startedFakeout = false;
 var getTrolled = false;
 
 var allow_gf_taunt = true;
+
+var bullshit = false;
 
 function onLoad()
 {
@@ -172,41 +171,11 @@ function onGameOver()
 {
 	if (boyfriend.curCharacter != 'boyfriend') return;
 
-	if (getTrolled)
+	if (getTrolled && !bullshit)
 	{
-		game.persistentUpdate = false;
-		game.persistentDraw = true;
-		game.paused = true;
-		game.audio?.pause();
-
-		camHUD.alpha = 0;
-
-		FlxG.camera.followLerp = 0;
-
-		if (!startedFakeout)
-		{
-			camFollow = new FlxObject(boyfriend.getMidpoint().x - boyfriend.cameraPosition[0] - 100, boyfriend.getMidpoint().y + boyfriend.cameraPosition[1] - 100);
-			FlxG.camera.scroll.set();
-			FlxG.camera.target = null;
-			FlxG.camera.follow(camFollow, true, 0);
-
-			fuckassVOID = new FlxSprite(0, 0).makeGraphic(5000, 5000, 0xff000000);
-			fuckassVOID.screenCenter();
-			add(fuckassVOID);
-
-			boyfriend_troll = new Character(0, 0, 'boyfriend_fakeout', true);
-			add(boyfriend_troll);
-			boyfriend_troll.x = boyfriend.x;
-			boyfriend_troll.y = boyfriend.y;
-			boyfriend_troll.playAnim('trolololololol');
-
-			FlxG.sound.play(Paths.sound('rareChance/fakeout_death', null, PathsTestMode.LOOSE));
-
-			new FlxTimer().start(6.25, function(_) getTrolled = false);
-		}
-
-		startedFakeout = true;
-
+		bullshit = true;
+		getTrolled = false;
+		openSubState(new ScriptedSubstate('FakeOutLikeThatOneMod'));
 		return Function_Stop;
 	}
 }

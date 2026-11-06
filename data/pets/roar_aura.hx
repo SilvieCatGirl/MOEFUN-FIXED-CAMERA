@@ -37,6 +37,7 @@ function onUpdate(elapsed) {
 
 function spawnTrail() {
 	var trail;
+
 	if (trailGroup.getFirstDead() != null)
 	{
 		// recycle sprites instead of just creating them endlessly
@@ -54,6 +55,7 @@ function spawnTrail() {
 		trailGroup.add(trail);
 		trail.shader = pet.shader;
 	}
+
 	trail.x = pet.x;
 	trail.y = pet.y;
 	trail.offset = pet.offset;
