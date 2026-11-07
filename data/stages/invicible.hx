@@ -6,6 +6,8 @@ function onLoad()
 	error.camera = PlayState.instance.camHUD;
 	error.screenCenter();
 	add(error);
+
+	healthGain = healthLoss = 0;
 }
 
 function onCreatePost()
@@ -17,8 +19,8 @@ function onCreatePost()
 	modManager.setValue("noteAlpha", 1);
 	modManager.setValue("alpha", 1);
 
-	modManager.queueEase(36, 56, 'noteAlpha', 0.65, 'linear', 1);
-	modManager.queueEase(36, 56, 'alpha', 0.65, 'linear', 1);
+	modManager.queueEase(36, 56, 'noteAlpha', 0.6, 'linear', 1);
+	modManager.queueEase(36, 56, 'alpha', 0.6, 'linear', 1);
 
 	modManager.queueEase(120, 128, 'noteAlpha', 0, 'linear', 0);
 	modManager.queueEase(120, 128, 'alpha', 0, 'linear', 0);
@@ -30,6 +32,7 @@ function onCreatePost()
 	for (hi in [playHUD.healthBar, playHUD.scoreTxt, playHUD.iconP1, playHUD.iconP2]) hi.alpha = 0;
 
 	playHUD.healthBar.y += 40;
+	playHUD.scoreTxt.y = 20;
 	playHUD.iconP1.y += 20;
 
 	playHUD.timeBar.visible = playHUD.timeTxt.visible = false;
@@ -56,11 +59,13 @@ function onEvent(eventName, value1, value2)
 				FlxTween.tween(error, {'scale.x': 0}, 1.3, {ease: FlxEase.circInOut});
 				FlxTween.tween(error, {'scale.y': 0}, 1.2);
 				FlxTween.tween(dad, {alpha: 1}, 2.2);
+				taskGroup.visible = true;
 			}
 
 			if (value1 == 'hud-on')
 			{
-				for (hehe in [playHUD.healthBar, playHUD.iconP1, playHUD.iconP2]) FlxTween.tween(hehe, {alpha: 1}, 0.7);
+				for (hehe in [playHUD.healthBar, playHUD.scoreTxt, playHUD.iconP1, playHUD.iconP2]) FlxTween.tween(hehe, {alpha: 1}, 0.7);
+				healthGain = healthLoss = 1;
 			}
 	}
 }
@@ -70,12 +75,12 @@ function onSectionHit()
 	if (mustHitSection)
 	{
 		defaultCamZoom = 0.35;
-		FlxTween.tween(boyfriend, {alpha: 1}, 0.9);
+		FlxTween.tween(boyfriend, {alpha: 1}, 0.7);
 	}
 	else if (!mustHitSection)
 	{
 		defaultCamZoom = 0.6;
-		FlxTween.tween(boyfriend, {alpha: 0}, 0.9);
+		FlxTween.tween(boyfriend, {alpha: 0}, 0.7);
 	}
 }
 
@@ -87,5 +92,16 @@ function onUpdatePost(elapsed:Float):Void
 
 function opponentNoteHit(note)
 {
-	if (health > 0.2) health -= 0.015;
+	if (health > 0.2) health -= (0.015 * healthLoss);
+}
+
+function onGameOver()
+{
+	KillNotes();
+	audio.inst.stop();
+	audio.playerVolume = 0;
+	audio.opponentVolume = 0;
+
+	FlxG.resetState();
+	return Function_Stop;
 }
