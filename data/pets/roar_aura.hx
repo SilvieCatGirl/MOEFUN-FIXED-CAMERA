@@ -15,7 +15,9 @@ var trailGroup:FlxTypedGroup = new FlxTypedGroup();
 function onCreatePost()
 {
 	baseY = pet.y - 100;
+
 	stage.insert(stage.members.indexOf(pet), trailGroup);
+
 	if (FlxG.random.bool())
 	{
 		aura_farm = true;
@@ -48,19 +50,19 @@ function spawnTrail() {
 	}
 	else 
 	{
-		trail = pet.clone();
-		trail.scale = pet.scale;
+		trail = parent.clone();
+		trail.scale = parent.scale;
 		trail.updateHitbox();
 		trail.velocity.x = 200;
 		trailGroup.add(trail);
-		trail.shader = pet.shader;
+		trail.shader = parent.shader;
 	}
 
-	trail.x = pet.x;
-	trail.y = pet.y;
-	trail.offset = pet.offset;
-	trail.angle = pet.angle;
-	trail.alpha = 1;
+	trail.x = parent.x;
+	trail.y = parent.y;
+	trail.offset = parent.offset;
+	trail.angle = parent.angle;
+	trail.alpha = parent.alpha;
 	FlxTween.tween(trail, {alpha: 0}, 1, {onComplete: () -> trail.kill()});
 }
 

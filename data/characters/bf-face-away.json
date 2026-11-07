@@ -1,0 +1,147 @@
+{
+	"pausePortrait": "",
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "POV BF Idle",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				117,
+				37
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "POV BF Down0",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				117,
+				37
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "POV BF Down Miss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				217,
+				75
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "POV BF Left0",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				197,
+				75
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "POV BF Left Miss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				24,
+				72
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "POV BF Right0",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				24,
+				72
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "POV BF Right Miss",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				132,
+				77
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "POV BF Up0",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				132,
+				77
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "POV BF Up Miss",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/POV_BF",
+	"position": [
+		-140,
+		460
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"flags": {},
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
+	"healthicon": "bf",
+	"afterimages": true,
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colour": -13520687,
+	"camera_position": [
+		390,
+		-300
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 8,
+	"scale": 2,
+	"_editor_isPlayer": true
+}
