@@ -1,6 +1,13 @@
 import funkin.audio.visualize.PolygonSpectogram;
+import funkin.game.shaders.ChromaticAbberation;
 
 var vus:PolygonSpectogram;
+
+var chroma:ChromaticAbberation;
+var chromaPet:ChromaticAbberation;
+
+var strengthing:Float = 0.15;
+var strengthingPet:Float = 0.25;
 
 function onCreatePost()
 {
@@ -13,6 +20,15 @@ function onCreatePost()
 	modManager.setValue("transformX", -100, 1);
 
 	modManager.setValue('sustainSplashAlpha', 1, 1);
+
+	chroma = new ChromaticAbberation();
+	chromaPet = new ChromaticAbberation();
+
+	chroma.set_amount(strengthing);
+	chromaPet.set_amount(strengthingPet);
+
+	boyfriend.shader = chroma.shader;
+	pet?.shader = chromaPet.shader;
 }
 
 function onStepHit()
